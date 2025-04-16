@@ -1,0 +1,49 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Build output
+dist/
+build/
+
+# IDE/Editor-specific files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Tailwind
+tailwind.config.js
+
+# Compiled files (maps)
+*.js.map
+*.css.map
+
+# Ignore sensitive or unnecessary files in shared/server directories
+# If you have sensitive files like API keys in these directories, they should be ignored
+server/.env         # Ignore environment files for server-side configuration
+server/node_modules/ # Ignore node_modules in server directory (if it exists)
+shared/.env          # Ignore any .env files in shared directory
+
+# Optional: Ignore logs or build folders specific to server/shared if necessary
+server/logs/
+shared/build/
+
+# Ignore any generated files like icons or temporary files
+generated-icon.png
+
+# Ignore configuration for certain build tools
+vite.config.ts
+tsconfig.json
+drizzle.config.ts
+postcss.config.js
+tailwind.config.ts
+theme.json
+venv
